@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-scaler = joblib.load('scaler.pkl')
-model = joblib.load('model.pkl')
+scaler = joblib.load('Customer Churn Analysis/scaler.pkl')
+model = joblib.load('Customer Churn Analysis/model.pkl')
 
 st.title('Churn Prediction App')
 
@@ -43,3 +43,4 @@ if predictbutton:
 
 else:
     st.write("Please enter the value and use predict button")
+
